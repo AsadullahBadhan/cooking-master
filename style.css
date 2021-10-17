@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #edd263;
+	font-size: 14px;
+}
+
+.container {
+	width: 90%;
+	margin: 4em auto;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-items {
+	display: flex;
+	align-items: center;
+}
+
+.nav-link {
+	margin-left: 3em;
+	list-style: none;
+}
+
+nav .brand {
+	text-decoration: none;
+	color: #3b2d64;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.search {
+	margin-bottom: 2em;
+	display: flex;
+	justify-content: center;
+}
+
+#search-box,
+#search-btn {
+	padding: 0.8em 1em;
+	border: none;
+}
+
+#search-box {
+	width: 30%;
+	background-color: #f8f7f5;
+	border-radius: 0.3em 0 0 0.3em;
+}
+
+#search-btn {
+	color: white;
+	background-color: #3b2d64;
+	cursor: pointer;
+	border-radius: 0 0.3em 0.3em 0;
+}
+
+.meals {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5em;
+}
+
+.food-item {
+	background-color: white;
+	border-radius: 0.5em;
+}
+
+.food-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 0.5em 0.5em 0 0;
+}
+
+.food-title {
+	text-align: center;
+	padding: 1em;
+}
+
+#recipe-section {
+	display: none;
+	width: 30%;
+	background-color: white;
+	margin: 1em auto;
+	border-radius: 0.5em;
+}
+
+#recipe-section img {
+	width: 100%;
+	height: auto;
+}
+
+.item-recipe {
+	padding: 2em 3em;
+}
+
+h1,
+h4 {
+	margin-bottom: 1em;
+}
+
+.item-recipe li {
+	list-style: none;
+}
+
+.item-recipe li i {
+	color: #3b2d64;
+}
