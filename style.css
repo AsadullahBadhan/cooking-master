@@ -62,7 +62,7 @@ nav .brand {
 	border-radius: 0 0.3em 0.3em 0;
 }
 
-.meals {
+#meals {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 1.5em;
@@ -95,6 +95,7 @@ nav .brand {
 #recipe-section img {
 	width: 100%;
 	height: auto;
+	border-radius: 0.5em 0.5em 0 0;
 }
 
 .item-recipe {
@@ -112,4 +113,8 @@ h4 {
 
 .item-recipe li i {
 	color: #3b2d64;
+}
+
+.fa-check-square {
+	margin-right: 0.6em;
 }
