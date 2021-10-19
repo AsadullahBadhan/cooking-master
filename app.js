@@ -23,8 +23,9 @@ function showCategoryItems(category) {
         .then(res => res.json())
         .then(data => {
             showMeals(data, meals);
-            console.log(category);
         })
+    searchResult.style.display = 'none';
+    meals.style.display = 'grid';
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -35,12 +36,9 @@ searchBtn.addEventListener('click', () => {
     const searchBoxValue = searchBox.value;
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchBoxValue}`)
         .then(res => res.json())
-        .then(data => {
-            showMeals(data, searchResult);
-            console.log(data)
-        })
+        .then(data => showMeals(data, searchResult))
+    searchResult.style.display = 'grid';
     meals.style.display = 'none'; //for cleaner view of search result
-
 })
 
 function showMeals(data, containerId) {
