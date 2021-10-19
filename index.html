@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<nav class="container">
-			<a href="#meal-section" class="brand">Cooking Master</a>
+			<a href="#meal-section" class="brand" onclick="defaultMenu()">Cooking Master</a>
 			<ul class="nav-items">
 				<li class="nav-link">Home</li>
 				<li class="nav-link">About</li>
@@ -24,75 +24,22 @@
 				<li class="nav-link">Blog</li>
 			</ul>
 		</nav>
+		<!-- search -->
+		<div class="search">
+			<input type="text" id="search-box" placeholder="search for meal..." />
+			<button id="search-btn">Search</button>
+		</div>
+
 		<section class="container" id="meal-section">
-			<div class="search">
-				<input type="text" id="search-box" placeholder="search for meal..." />
-				<button id="search-btn">Search</button>
-			</div>
-			<div id="meals">
-				<!-- <div class="food-item">
-					<img src="images/food.jpg" alt="" />
-					<div class="food-title">
-						<h3>food</h3>
-					</div>
-				</div>
-				<div class="food-item">
-					<img src="images/food.jpg" alt="" />
-					<div class="food-title">
-						<h3>food</h3>
-					</div>
-				</div>
-				<div class="food-item">
-					<img src="images/food.jpg" alt="" />
-					<div class="food-title">
-						<h3>food</h3>
-					</div>
-				</div>
-				<div class="food-item">
-					<img src="images/food.jpg" alt="" />
-					<div class="food-title">
-						<h3>food</h3>
-					</div>
-				</div>
-				<div class="food-item">
-					<img src="images/food.jpg" alt="" />
-					<div class="food-title">
-						<h3>food</h3>
-					</div>
-				</div>
-				<div class="food-item">
-					<img src="images/food.jpg" alt="" />
-					<div class="food-title">
-						<h3>food</h3>
-					</div>
-				</div>
-				<div class="food-item">
-					<img src="images/food.jpg" alt="" />
-					<div class="food-title">
-						<h3>food</h3>
-					</div>
-				</div>
-				<div class="food-item">
-					<img src="images/food.jpg" alt="" />
-					<div class="food-title">
-						<h3>food</h3>
-					</div>
-				</div> -->
-			</div>
+			<!-- search result will render here -->
+			<div id="search-result"></div>
+			<!-- meals will render here -->
+			<div id="meals"></div>
 		</section>
+
 		<section id="recipe-section">
-			<!-- <img src="images/food.jpg" alt="" />
-			<div class="item-recipe">
-				<h1> Food name here</h1>
-				<h4>Ingredient</h4>
-				<ul>
-					<li><i class="fas fa-check-square"></i> rice</li>
-					<li><i class="fas fa-check-square"></i> oil</li>
-					<li><i class="fas fa-check-square"></i> egg</li>
-					<li><i class="fas fa-check-square"></i> onion</li>
-					<li><i class="fas fa-check-square"></i> gerlic</li>
-				</ul>
-			</div> -->
+			<!-- list of ingredients will shown from here -->
+			<div id="recipe"></div>
 		</section>
 
 		<script src="app.js"></script>

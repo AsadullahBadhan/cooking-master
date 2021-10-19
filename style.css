@@ -28,6 +28,7 @@ nav {
 .nav-link {
 	margin-left: 3em;
 	list-style: none;
+	cursor: pointer;
 }
 
 nav .brand {
@@ -62,7 +63,8 @@ nav .brand {
 	border-radius: 0 0.3em 0.3em 0;
 }
 
-#meals {
+#meals,
+#search-result {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 1.5em;
@@ -105,6 +107,10 @@ nav .brand {
 h1,
 h4 {
 	margin-bottom: 1em;
+}
+
+h1 {
+	color: #3b2d64;
 }
 
 .item-recipe li {
